@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-        <meta charset="UTF-8">
-        <meta name= "viewport" content="width=device-width,initial-scale=1.0">
-        <title>Hello word</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Eletrônico do Hospital</title>
 </head>
 <body>
-    <h1>Hello Word</h1>
-    <ol>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>PHP</li>
-        <li>python</li>
-    </ol>
+
+    <form>
+    <h1>Prontuário Eletrônico</h1>
+    
+      
+        <legend>Nome Completo:</legend>
+        <input type="text" name="Nome Completo"></input><br><br>
+           
+        <legend>Data de Nascimento:</legend>
+        <input type="date" name="Data de Nascimento"><br><br>
+            
+        <legend>Telefone:</legend>
+        <input type="tel" name="Telefone"><br><br>
+
+        <legend>E_mail:</legend>
+        <input type="email" name="E_mail"><br><br>
+
+        <legend>CPF</legend>
+        <input type="number" name="CPF"><br><br> 
+        
+        <legend>Senha</legend>
+        <input type="password" name="Senha"> <br><br>
+
+        <legend>Gênero:</legend>
+        <select name="Gênero" >
+            <option value="masculino">masculino</option>
+            <option value="feminino">feminino</option></select><br><br>
+
+        <legend>Altura (em cm):</legend>
+        <input type="number" step="1,0" min="1,0" max="2,0"><br><br>
+        
+        <!--subir arquivo para o site-->
+        <label for="foto">Foto do Paciente:</label>
+        <input type="file" name="foto"><br><br>
+        
+        <!--inserir texto com quebra de linha-->
+        <label for="notas">Notas Adicionais:</label><br>
+        <textarea name="notas" rows="4" cols="50"></textarea><br><br>
+        
+    </form>
+
 </body>
 </html>
